@@ -9,8 +9,8 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --gold: #c9a84c;
-    --gold-light: #e8c97a;
+    --gold: #2ecc71;
+    --gold-light: #58d68d;
     --red: #c0392b;
     --dark: #0a0a0a;
     --dark2: #111111;
@@ -29,7 +29,6 @@
     cursor: default;
   }
 
-  /* ─── SLIDES ─── */
   .slides-wrapper {
     position: relative;
     width: 100%;
@@ -54,7 +53,6 @@
     pointer-events: all;
   }
 
-  /* ─── BACKGROUND EFFECTS ─── */
   .bg-noise {
     position: absolute;
     inset: 0;
@@ -72,7 +70,6 @@
     pointer-events: none;
   }
 
-  /* Image de fond globale pour l'immersion PC */
   .gta-bg-fullscreen {
     position: absolute;
     inset: 0;
@@ -83,7 +80,6 @@
     z-index: 0;
   }
 
-  /* ─── SLIDE 1 — COVER ─── */
   #slide-1 .bg-gradient {
     background: linear-gradient(to bottom, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.85) 100%);
   }
@@ -142,7 +138,6 @@
     opacity: 0.6;
   }
 
-  /* ─── SLIDE 2 — IDENTITÉ ─── */
   #slide-2 .bg-gradient {
     background: radial-gradient(circle at center, rgba(17,17,17,0.6) 0%, rgba(11,11,11,0.95) 80%);
   }
@@ -208,7 +203,6 @@
     color: var(--white);
   }
 
-  /* ─── SLIDE 3 — FAMILLE ─── */
   #slide-3 .bg-gradient {
     background: radial-gradient(circle at center, rgba(10,10,10,0.7) 0%, rgba(5,5,5,0.95) 90%);
   }
@@ -260,7 +254,6 @@
     opacity: 0.3;
   }
 
-  /* ─── SLIDE 4 — BACKGROUND ─── */
   #slide-4 .bg-gradient {
     background: linear-gradient(90deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.8) 50%, rgba(10,10,10,0.5) 100%);
   }
@@ -281,7 +274,6 @@
     font-weight: 600;
   }
 
-  /* ─── SLIDE 5 — OBJECTIFS ─── */
   #slide-5 .bg-gradient {
     background: radial-gradient(circle at center, rgba(10,10,10,0.5) 0%, rgba(5,5,5,0.95) 80%);
   }
@@ -332,7 +324,6 @@
     letter-spacing: 0.05em;
   }
 
-  /* ─── SLIDE 6 — CONCLUSION & STAFF ─── */
   #slide-6 .bg-gradient {
     background: radial-gradient(circle at center, rgba(15,15,15,0.7) 0%, rgba(5,5,5,0.98) 90%);
   }
@@ -382,7 +373,6 @@
     display: block;
   }
 
-  /* ─── NAVIGATION ─── */
   .nav {
     position: fixed;
     bottom: 2.5rem;
@@ -480,7 +470,6 @@
 
 <div class="slides-wrapper">
 
-  <!-- SLIDE 1: COVER -->
   <div class="slide active" id="slide-1">
     <img class="gta-bg-fullscreen" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/769741b0db7a7261d71101966a3e14fb.jpg" alt="Los Santos Background" />
     <div class="bg-gradient"></div>
@@ -494,7 +483,6 @@
     </div>
   </div>
 
-  <!-- SLIDE 2: ÉTAT CIVIL -->
   <div class="slide" id="slide-2">
     <img class="gta-bg-fullscreen" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/49ff5bf65b86faaa112395d985a5356e.jpg" alt="GTA 5 Vibe Background" />
     <div class="bg-gradient"></div>
@@ -532,7 +520,6 @@
     </div>
   </div>
 
-  <!-- SLIDE 3: ENTOURAGE -->
   <div class="slide" id="slide-3">
     <img class="gta-bg-fullscreen" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b822d140e6cb4a4bd1d71322d76e48dd.jpg" alt="GTA V Art Background" />
     <div class="bg-gradient"></div>
@@ -564,7 +551,6 @@
     </div>
   </div>
 
-  <!-- SLIDE 4: HISTOIRE -->
   <div class="slide" id="slide-4">
     <img class="gta-bg-fullscreen" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3fcda5a329971861783cf824db65494d.jpg" alt="Los Santos Night View" />
     <div class="bg-gradient"></div>
@@ -583,7 +569,6 @@
     </div>
   </div>
 
-  <!-- SLIDE 5: OBJECTIFS -->
   <div class="slide" id="slide-5">
     <img class="gta-bg-fullscreen" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2fe9287c88b7ec6ec59166ef5810b427.jpg" alt="GTA V Cityscape" />
     <div class="bg-gradient"></div>
@@ -613,7 +598,6 @@
     </div>
   </div>
 
-  <!-- SLIDE 6: CONCLUSION & STAFF -->
   <div class="slide" id="slide-6">
     <img class="gta-bg-fullscreen" src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/769741b0db7a7261d71101966a3e14fb.jpg" alt="Los Santos Outro Background" />
     <div class="bg-gradient"></div>
@@ -622,12 +606,10 @@
       <div class="tag">Fin de transmission</div>
       <div class="slide-title"><span class="accent">REMERCIEMENTS</span></div>
       <div class="slide-subtitle">Fin de la présentation du dossier</div>
-      
       <div class="thanks-container">
         <div class="thanks-main">
           Merci à tous d'avoir pris le temps de m'écouter et de découvrir le profil de <span style="color: var(--gold); font-weight: 600;">Caïo Pereira</span>. L'histoire est prête à s'écrire dans les rues de Los Santos.
         </div>
-        
         <div class="staff-box">
           <span class="icon">🪪</span>
           <div class="role">À l'attention de l'équipe du Staff</div>
